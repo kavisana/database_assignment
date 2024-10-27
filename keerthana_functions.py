@@ -29,8 +29,6 @@ def create_rep_table(database_connection):
                           rate DECIMAL(3,2)
                           )''')
         print("Rep table created.")
-        
-        # Insert sample data (updated with last name and first name)
         cursor.execute("INSERT INTO rep VALUES ('20', 'Avisana', 'Keerthana', '624 Randall', 'Grove', 'FL', '33321', 20542.50, 0.05)")
         database_connection.commit()
         print("Data inserted into rep table.")
