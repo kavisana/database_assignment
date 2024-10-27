@@ -11,7 +11,7 @@ def create_database_file(file_name):
         print('Created the database file.')
         return conn
     
-def create_rep_table(database_connectiion):
+def create_rep_table(database_connection):
     #use the connection object to create the database table
     #Create a function that will create the rep table and add data to it. 
     #Use the data in sql_commands.txt to help you with it.
@@ -37,7 +37,7 @@ def create_rep_table(database_connectiion):
     except sqlite3.Error as e:
         print("Error creating or inserting data in rep table:", e)
     pass
-def create_customer_table(database_connectiion):
+def create_customer_table(database_connection):
     #use the connection object to create the database table
     #Create a function that will create the customer table and add the data to it.
     # Use the data in sql_commands.txt to help you with it.
@@ -63,7 +63,7 @@ def create_customer_table(database_connectiion):
     except sqlite3.Error as e:
         print("Error creating or inserting data in customer table:", e)
     pass
-def insert_a_customer_record(database_connectiion):
+def insert_a_customer_record(database_connection):
     #Create a function that prompts the user for a rep number. 
     # If the result is not empty, display the first record.
     try:
